@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color:#696969;
+    --hover-color:#dc3545;
+}
+/*  Navbar Styles */
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+    z-index: 1000;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .deep-dropdown ul {
+    display: none;
+    position: absolute;
+    right: 100%; /* Align to the right */
+    top: 0;
+    width: 180px;
+    padding: 10px;
+    list-style: none;
+    background-color: white;
+  }
+  
+  .deep-dropdown:hover ul {
+    display: block;
+  }
+  
+  /* Hover Effect */
+  nav a:hover, .dropdown-menu .dropdown-item:hover,
+  .deep-dropdown ul .deep-dropdown-item:hover {
+    color: var(--hover-color);
+    background-color: #fff;
+  }
+  
+  /* Mobile View */
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+  
+    .topnav a.icon {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  
+    .topnav.responsive {
+      position: relative;
+    }
+  
+    .topnav.responsive a {
+      float: none;
+      display: block;
+    }
+  
+    .topnav.responsive .icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  
+    /* Adjust dropdown for mobile */
+    .dropdown-menu {
+      position: relative;
+      display: none;
+      width: 100%;
+    }
+  
+    .topnav.responsive .dropdown-menu {
+      display: block;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .deep-dropdown ul {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+  /*/navbar  */
+.hero a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+}
+
+section{
+    height: 32rem;
+    background-image: url(/assets/image/hero-bg.jpg);
+    background-size: cover;
+    margin-top: 120px;
+}
+
+.owl-carousel .opacity{
+    height: 30px;
+    filter: grayscale(1);
+}
+
+.owl-carousel div img:hover{
+    filter: grayscale(0);
+}
+/* 
+.owl-carousel div{
+    background-color: transparent; 
+} */
+
+.custom-shape { 
+    width: 100%; 
+    background-color:#1b1b1b; 
+    clip-path: polygon(0% 10%,0% 100%,100% 90%,100% 0%); 
+}
+
+.custom-shape a:hover{
+    background-color: #dc3545;
+}
+
+.custom-shape i{
+    color:var(--hover-color);
+    font-size: 50px;
+}
+
+ .custom-shape h3, .custom-shape p{
+    color: #fff;
+}
+.custom-shape h3:hover{
+    color: var(--hover-color);
+}
+.count h1{
+    font-weight: 700;
+}
+.count{
+    color: #696969;
+}
+.flex-gap {
+    display: flex;
+    gap: 15px; /* Adjust the value as needed */
+}
+
+.parent{
+    position: relative;
+    padding: 30px;
+}
+.child{
+    position: absolute;
+    top: -15px;
+    left: 43%;
+    padding: 10px;
+    background-color: #fff;
+}
+.index{
+    border: 1px solid #6969695e;
+    cursor: pointer;
+}
+.index:hover{
+    border: 1px solid var(--hover-color);
+}
+/* .active{
+    background-color: var(--hover-color);
+    color: white;
+} */
+
+.row ul li{
+    list-style-type: none;
+    margin-left: -30px;
+    padding-bottom: 12px;
+}
+
+#myDIV .col-3 a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+  background-color: #ff0000;
+  height: 3px;
+  width: 5%;
+}
+        
+            .nav-item {
+                cursor: pointer;
+                transition: color 0.3s ease;
+            }
+
+            .nav-item:hover {
+                color: #ff0000; /* Optional hover effect */
+            }
+
+.child1{
+    top: 10px;
+    left: 20px;
+}
+.child2{
+    bottom: 50%;
+    left: 40%;
+}
+.child3{
+    bottom: 8%;
+    left: 10%;
+}
+.main{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.979);
+}
+.parent1:hover .main{
+    visibility: visible;
+}
+.effect:hover{
+  opacity: 0.6;
+}
+
+ .parent1 {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .parent1 img {
+    display: block;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .parent1:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+/* faq */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: 1px solid #6b606100;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s;
+  }     
+  .accordion:after {
+    content: '\02C3';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .accordion .active{
+    background-color: #dc3546b9;
+  }
+  .border .active:after {
+    content: "\02C5";
+    color: #dc3545;
+  }
+  .border .active{
+    color: #dc3545;
+  }
+  .border{
+    margin-bottom:10px;
+    outline: 1px solid #dc3545;
+    background-color: #dc354627;
+  }
+/* team */
+  .team-icon i{
+    background-color: #c6c6c6;
+  }
+  .team-icon i:hover{
+    background-color: #dc3545;
+  }
+    
+.team{
+    position: relative;
+}
+@media screen and (min-width:480px) {
+    .team-icon{
+        position: absolute;
+        bottom: 20%;
+        left:30%;
+        visibility: hidden;
+    
+    }
+    
+}
+@media screen and (min-width:720px) {
+    .team-icon{
+        position: absolute;
+        bottom: 30%;
+        left:15%;
+        visibility: hidden;
+    
+    }
+    
+}
+.team:hover .team-icon{
+    visibility: visible;
+}
+
+.contact-border{
+    border: 2px dotted #dc3545;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.top {
+    position: sticky;
+    bottom: 10px; 
+    left: 95%;
+    --offset: 100px; 
+    margin-top: calc(100vh + var(--offset));
+  }
+
+  /* navbar */
+  
+
+
+  /* details */
+  .detailss .active{
+    color:white;
+    background-color: #e03a3c;
+  }
+  .detailss .active:hover{
+    background-color: #e03a3d23;
+    color: #e03a3c;
+    border: 1px solid #e03a3c;
+  }
+  .service:hover{
+    background-color: #e03a3d23;
+    border: 1px solid #e03a3c;
+  }
